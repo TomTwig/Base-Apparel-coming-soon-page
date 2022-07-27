@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+:root{
+
+    --color-primary-desaturatedRed: hsl(0, 36%, 70%);
+    --color-primary-softRed: hsl(0, 93%, 68%);
+    --color-neutral-darkGrayishRed: hsl(0, 6%, 24%);
+
+    --gradient-one: 135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%);
+    --gradient-two: 135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%);
+
+    --font-size-body:16px;
+    --font-family-josefin-sansSerif:'Josefin Sans', sans-serif;
+    --font-weight-300:300;
+    --font-weight-400:400;
+    --font-weight-600:600;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    height: 100vh;
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: var(--font-family-josefin-sansSerif);
+
+}
+
+img{
+}
+.container{
+    display: flex;
+}
+.info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em 12.5%;
+    
+}
+.info p{
+}
+.info__brand img{
+    width: fit-content
+    
+}
+
+.info__text{
+    margin-top: 7em;
+}
+
+.info__text h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: var(--font-weight-600);
+
+}
+.info__text h1 span{
+    color: var(--color-primary-desaturatedRed);
+    font-weight: 100;
+}
+.info__text p{
+    color: var(--color-primary-desaturatedRed);
+    line-height: 1.5rem;
+}
+
+
+.info__text h1{
+    margin-bottom: .5em;
+}
+.info__form{
+}
+.info__form {
+    display: flex;
+    width: 100%;
+    
+}
+.info__form input{
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--color-primary-desaturatedRed);
+    padding: 1em;
+    border-radius: 25px;  
+}
+.info__form input::placeholder{
+    color: var(--color-primary-desaturatedRed);
+}
+
+.info__form button{
+    padding: 1em 3em;
+    border-radius: 25px;
+    border-width: 0;
+    background-image: linear-gradient(var(--gradient-two));
+    box-shadow: 5px 5px 10px  rgba(0, 0, 0, .1);
+    position: relative;
+    right: 3em;  
+}
+
+.picture{
+    flex: 2;
+}
+
+.picture img{
+    height: 100%;
+    object-fit: cover;
+}
