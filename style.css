@@ -26,34 +26,45 @@
 
 
 body{
-    height: 100vh;
     background-image: url(images/bg-pattern-desktop.svg);
     font-family: var(--font-family-josefin-sansSerif);
-
+    display: flex;
 }
 
 img{
+    max-width: 100%;
 }
 .container{
+
     display: flex;
+    align-items: center;
+   
 }
 .info{
     flex: 1;
+    padding: 3em 10em;
     display: flex;
+    align-content: center;
     flex-direction: column;
-    gap: 1em;
-    padding: 2em 12.5%;
-    
+    height: 100vh;
+    justify-content: center;
+    margin-bottom: auto;
+
 }
+
 .info p{
 }
-.info__brand img{
-    width: fit-content
-    
+
+.info__brand{
+margin-bottom: auto;   
+}
+
+.info-bottom{
+margin-top: auto;
 }
 
 .info__text{
-    margin-top: 7em;
+
 }
 
 .info__text h1{
@@ -70,6 +81,7 @@ img{
 .info__text p{
     color: var(--color-primary-desaturatedRed);
     line-height: 1.5rem;
+    margin-bottom: 3em;
 }
 
 
@@ -78,37 +90,64 @@ img{
 }
 .info__form{
 }
+/* Parent */
 .info__form {
-    display: flex;
-    width: 100%;
-    
-}
-.info__form input{
     position: relative;
+
+}
+/* Input */
+.info__form input{
     width: 100%;
     border: 1px solid var(--color-primary-desaturatedRed);
-    padding: 1em;
-    border-radius: 25px;  
+    padding: 1.5rem;
+    border-radius: 50px;
 }
+
 .info__form input::placeholder{
     color: var(--color-primary-desaturatedRed);
 }
-
+/* Button */
 .info__form button{
-    padding: 1em 3em;
-    border-radius: 25px;
+    position: absolute;
+    right: 0;
+    padding: 1.3rem 3rem;
+    border-radius: 50px;
     border-width: 0;
     background-image: linear-gradient(var(--gradient-two));
     box-shadow: 5px 5px 10px  rgba(0, 0, 0, .1);
-    position: relative;
-    right: 3em;  
 }
 
 .picture{
-    flex: 2;
+    flex: 1.5;
+    height: 100vh;
+    overflow: hidden;
 }
 
+
 .picture img{
-    height: 100%;
     object-fit: cover;
+    height: 100%;
+
+}
+
+
+@media screen and (max-width:600px) {
+
+    body{
+        height: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+
+    .picture img{
+        height: 350px;
+        object-fit: cover;
+        width: 100%;
+        object-position: 0 2em;
+    }
+
+
+
+    
 }
