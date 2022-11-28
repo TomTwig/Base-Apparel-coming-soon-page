@@ -29,6 +29,7 @@ body{
     background-image: url(images/bg-pattern-desktop.svg);
     font-family: var(--font-family-josefin-sansSerif);
     display: flex;
+    font-size: var(--font-size-body);
 }
 
 img{
@@ -38,17 +39,12 @@ img{
 
     display: flex;
     align-items: center;
+    height: 100vh;
    
 }
 .info{
-    flex: 1;
-    padding: 3em 10em;
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    margin-bottom: auto;
+flex: 1;
+padding: 5em;
 
 }
 
@@ -56,11 +52,11 @@ img{
 }
 
 .info__brand{
-margin-bottom: auto;   
+ 
 }
 
 .info-bottom{
-margin-top: auto;
+
 }
 
 .info__text{
@@ -68,7 +64,6 @@ margin-top: auto;
 }
 
 .info__text h1{
-    font-size: 4rem;
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-weight: var(--font-weight-600);
@@ -118,9 +113,9 @@ margin-top: auto;
 }
 
 .picture{
-    flex: 1.5;
-    height: 100vh;
-    overflow: hidden;
+    flex: 1;
+    height: 100%;
+ 
 }
 
 
