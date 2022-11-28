@@ -44,14 +44,17 @@ img{
 }
 .info{
 flex: 1;
-padding: 5em;
-
+padding: 8em;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 .info p{
 }
 
 .info__brand{
+    margin-bottom: auto;
  
 }
 
@@ -60,6 +63,7 @@ padding: 5em;
 }
 
 .info__text{
+    width: 70%;
 
 }
 
@@ -67,6 +71,8 @@ padding: 5em;
     text-transform: uppercase;
     letter-spacing: 1rem;
     font-weight: var(--font-weight-600);
+    width: min-content;
+    line-height: 1.5em;
 
 }
 .info__text h1 span{
@@ -84,6 +90,8 @@ padding: 5em;
     margin-bottom: .5em;
 }
 .info__form{
+    margin-bottom: auto;
+    width: 70%;
 }
 /* Parent */
 .info__form {
@@ -126,7 +134,7 @@ padding: 5em;
 }
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
 
     body{
         height: 100%;
