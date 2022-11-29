@@ -96,14 +96,27 @@ justify-content: center;
 /* Parent */
 .info__form {
     position: relative;
-
 }
+.error{
+    position: absolute;
+    display: block;
+}
+
+
 /* Input */
 .info__form input{
     width: 100%;
     border: 1px solid var(--color-primary-desaturatedRed);
     padding: 1.5rem;
     border-radius: 50px;
+}
+
+.info__form input:invalid{
+    border: 1px solid red;
+}
+
+.info__form input:active{
+    border: 1px solid yellow;
 }
 
 .info__form input::placeholder{
