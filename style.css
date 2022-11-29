@@ -112,6 +112,22 @@ justify-content: center;
     border-radius: 50px;
 }
 
+.info__form input:invalid{
+   border-color: red;
+}
+
+.info__form p{
+    color: red;
+    display: none;
+    position: absolute;
+    top: 4.5em;
+    left: 2em;
+    
+ }
+.info__form:has(input:invalid) p{
+    display: block;
+}
+
 
 
 
